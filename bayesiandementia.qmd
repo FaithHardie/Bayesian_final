@@ -13,12 +13,35 @@ editor: visual
 
 #### A. libraries
 
-```{r} library(tidyverse) library(bayesrules) library(rstanarm) library(bayesplot)}
+```{r}
+library(tidyverse)
+library(bayesrules)
+library(rstanarm)
+library(bayesplot)
+library(readr)
 ```
 
 #### B. Importing datasets and Defining variables
 
+Source of datasets: <https://sites.wustl.edu/oasisbrains/home/oasis-1/>
+
+```{r}
+data <- read_csv("merged_oasis_data.csv")
+data
+```
+
+MMSE (Mini-Mental State Examination):
+
+CDR (Clinical
+
 #### C. Data Cleaning
+
+```{r}
+oasis <- data %>% 
+select(Age, CDR, nWBV, 
+         MMSE) %>% 
+  na.omit()
+```
 
 ## 2. Visual EDA/ exploring
 
