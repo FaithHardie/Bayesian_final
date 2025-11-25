@@ -4,6 +4,12 @@
 
 ## 1. Libraries, dataset, and data cleaning. 
 
+#### A. libraries
+
+#### B. Importing datasets and Defining variables
+
+#### C. Data Cleaning
+
 ## 2. Visual EDA/ exploring
 
 ## 3. Bayesian modeling
